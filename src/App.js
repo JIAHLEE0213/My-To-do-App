@@ -8,12 +8,14 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <div className='To_do_list'>
-          <Sidebar/>
+        <div className='APP'>
+          {/* <Sidebar/> */}
+          <main>
             <Routes>
               <Route path="/" element={<Main/>}/>
               <Route path="/delete" element={<Delete/>}/>
             </Routes>
+          </main> 
         </div>
       </BrowserRouter>
     </div>

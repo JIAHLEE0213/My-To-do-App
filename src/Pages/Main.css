@@ -1,0 +1,28 @@
+.todoList_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 700px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.todo_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.input_todo {
+    width: 400px;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-align: left;
+    /* 들여쓰기 기능 */
+    text-indent: 20px;
+}
+
