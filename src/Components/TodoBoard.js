@@ -1,11 +1,12 @@
 import React from "react";
 import TodoItem from "./Todo";
 
-const TodoBoard = ({list}) => {
+const TodoBoard = ({list, handleDeleteBtn}) => {
 
     return (
         <div> 
-            {list.map((item, index) => <TodoItem key={index} item={item}/>)}
+            {list.map((item, index) => 
+            <TodoItem key={index} item={item} index={index} handleDeleteBtn={handleDeleteBtn}/>)}
         </div>
     )
 }

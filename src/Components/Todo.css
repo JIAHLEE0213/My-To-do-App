@@ -6,7 +6,7 @@
     width: 400px;
     height: 40px;
     margin-top: 10px;
-    padding-right: 10px;
+    margin-right: 70px;
     border-radius: 20px;
     text-align: left;
     /* 들여쓰기 기능 */
@@ -18,11 +18,12 @@
 
 .delteBtn {
     border: 0px;
-    background-color: #F7ECF9;
+    background-color:transparent;
 }
 
 .trashBtn { 
     color: #E2A4FF;
+    margin-right: 10px;
     height: 20px;
 }
 .trashBtn:hover {

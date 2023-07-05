@@ -12,8 +12,12 @@ const Main = () => {
         setInputvalue('');
         setList([inputValue, ...list])
         //빈문자열
-        
     }
+
+    const handleDeleteBtn = (index) => {
+        setList(list.filter((el, i) => i !== index));
+        console.log(index)
+    };
     return (         
         <div className="todoList_container">
             <div className="navbar">
@@ -22,13 +26,13 @@ const Main = () => {
                         <p>TO DO LIST</p>               
                     </div>
                 </div>
-                {/* <div className="navbar_icon--wrapper">
+                <div className="navbar_icon--wrapper">
                     <div className="navbar_icon">
                         <button className="navbar_btn">
                             <FontAwesomeIcon icon={faBars}/>
                         </button>
                     </div>
-                </div> */}
+                </div>
             </div>
             <div className="todo_wrapper">
                 <div className="todo_Input">
@@ -45,7 +49,9 @@ const Main = () => {
                     </button>
                 </div>    
             </div>    
-            <TodoBoard list={list}/>
+            <TodoBoard 
+            list={list}
+            handleDeleteBtn={handleDeleteBtn}/>
         </div>          
     )
 } 
