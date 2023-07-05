@@ -2,10 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 400px;
     width: 700px;
-    border: 1px solid black;
     border-radius: 20px;
     background-color: white;
 }
@@ -16,13 +14,50 @@
     align-items: center;
 }
 
+p {
+    font-size: 25px;   
+    font-weight: bold;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #E2A4FF;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 20px;
+}
+
 
 .input_todo {
     width: 400px;
+    height: 20px;
     margin-right: 10px;
     border-radius: 20px;
     text-align: left;
     /* 들여쓰기 기능 */
     text-indent: 20px;
+    padding: 10px 0px;
+    background-color: #F7ECF9;
+    border: 0px solid;
+    
+}
+
+.todoList_submitBtn {
+    background-color: #E2A4FF;
+    height: 43px;
+    width: 65px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    border: 0px solid;
+}
+
+.todoList_submitBtn:hover {
+    background-color: #AA77FF;
 }
 

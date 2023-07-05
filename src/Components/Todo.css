@@ -1,9 +1,30 @@
-.todoItem{
-    width : 300px;
-    height : 50px;
-    border : 1px solid black ;
-    background-color: white;
+.todoItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 40px;
     margin-top: 10px;
-    padding-top: 5px;
-    text-indent: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    text-align: left;
+    /* 들여쓰기 기능 */
+    text-indent: 20px;
+    background-color: #F7ECF9;
+    box-shadow: 20px;
+    font-size: 15px;
+}
+
+.delteBtn {
+    border: 0px;
+    background-color: #F7ECF9;
+}
+
+.trashBtn { 
+    color: #E2A4FF;
+    height: 20px;
+}
+.trashBtn:hover {
+    color: #AA77FF;
 }
